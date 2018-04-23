@@ -2,10 +2,10 @@
 This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Bryce Pruemer.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-
+import math
 def main():
     """ TESTs the functions in this module (by calling them). """
     double_a_float()
@@ -30,10 +30,11 @@ def double_a_float():
          -6.28
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
+    number = float(input('Enter a number:'))
+    print(number *2)
 
 def print_an_integer_many_times():
     """
@@ -61,10 +62,12 @@ def print_an_integer_many_times():
          10
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
+    intnumber = int(input('Enter an integer:'))
+    for k in range(intnumber):
+        print(intnumber*2)
 
 def print_an_integer_many_times_on_one_row():
     """
@@ -80,13 +83,16 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # ------------------------------------------------------------------
-
+    intnumber = 2*int(input('Enter an integer:'))
+    strnumber = str(intnumber)
+    output = strnumber*4
+    print(output)
 
 def input_it_all():
     """
@@ -120,11 +126,16 @@ def input_it_all():
          Peace & Love.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
-
-
+    floatnumber = float(input('Give me a positive number:'))
+    intnumber = int(input('Give me a positive integer:'))
+    strstate = input('Give me a string:')
+    for k in range(intnumber):
+        print(math.sqrt(floatnumber))
+    for k in range(intnumber):
+        print(strstate)
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
